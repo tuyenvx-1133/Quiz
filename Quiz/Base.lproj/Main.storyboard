@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hf-9w-BRr">
+                                <rect key="frame" x="175" y="446" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-EY-pdu">
+                                <rect key="frame" x="138.5" y="211" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9g-4A-0ft"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-w0-5GZ">
+                                <rect key="frame" x="141" y="487" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswerWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhi-hq-6E9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLE-AL-aEA">
+                                <rect key="frame" x="0.0" y="170" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKq-S3-How">
+                                <rect key="frame" x="0.0" y="170" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pLE-AL-aEA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GI5-Wg-LFr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jO4-w0-5GZ" secondAttribute="bottom" constant="150" id="Pay-oF-6R9"/>
+                            <constraint firstItem="pLE-AL-aEA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="UXS-7P-SzR"/>
+                            <constraint firstItem="dKq-S3-How" firstAttribute="top" secondItem="pLE-AL-aEA" secondAttribute="top" id="Ux3-0B-4Kg"/>
+                            <constraint firstItem="GN8-EY-pdu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XXj-Sx-St0"/>
+                            <constraint firstItem="2hf-9w-BRr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="coX-NJ-6nd"/>
+                            <constraint firstItem="GN8-EY-pdu" firstAttribute="top" secondItem="pLE-AL-aEA" secondAttribute="bottom" constant="20" id="eds-nD-Gdb"/>
+                            <constraint firstItem="dKq-S3-How" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iU7-Kw-Dbg"/>
+                            <constraint firstItem="dKq-S3-How" firstAttribute="bottom" secondItem="pLE-AL-aEA" secondAttribute="bottom" id="jeD-OF-XEo"/>
+                            <constraint firstItem="pLE-AL-aEA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mj8-zH-ief"/>
+                            <constraint firstItem="jO4-w0-5GZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nrW-rL-bZo"/>
+                            <constraint firstItem="jO4-w0-5GZ" firstAttribute="top" secondItem="2hf-9w-BRr" secondAttribute="bottom" constant="20" id="sGQ-6h-F36"/>
+                            <constraint firstItem="dKq-S3-How" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u5E-jE-EeU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="2hf-9w-BRr" id="rbA-kc-kce"/>
+                        <outlet property="currentQuestionLabel" destination="pLE-AL-aEA" id="lsY-Nr-md2"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="mj8-zH-ief" id="nQY-Yw-jND"/>
+                        <outlet property="nextQuestionLabel" destination="dKq-S3-How" id="Dt1-5s-uKI"/>
+                        <outlet property="nextQuestionLabelCentrerXConstraint" destination="u5E-jE-EeU" id="948-CK-2hc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
